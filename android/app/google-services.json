@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "592257480648",
+    "project_id": "digitaleducation-4ade5",
+    "storage_bucket": "digitaleducation-4ade5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592257480648:android:7a9c0edf940e0bef29f2fd",
+        "android_client_info": {
+          "package_name": "com.example.online_academy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592257480648-ot54bne2fbsu7b1tgqorvfmgisdvpsem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.online_academy",
+            "certificate_hash": "1f5e68150a5f336eeae96542715b7b0b91024863"
+          }
+        },
+        {
+          "client_id": "592257480648-j6bne6hoguhr2bag4l0udhlkvjr0qs5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl2mXXQIScN-Ia9TA_MHgBUfKSjkMJdDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592257480648-j6bne6hoguhr2bag4l0udhlkvjr0qs5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
