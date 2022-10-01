@@ -8,14 +8,17 @@ class InputField extends StatelessWidget {
     required this.controller,
     this.isObsure = false,
     required this.vlaidator,
+    this.isEnabled = true,
   }) : super(key: key);
   final String hintText;
   final TextEditingController controller;
   final bool isObsure;
   final String? Function(String?)? vlaidator;
+  final bool isEnabled;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      enabled: isEnabled,
       style: const TextStyle(color: Colors.greenAccent),
       controller: controller,
       obscureText: isObsure,
