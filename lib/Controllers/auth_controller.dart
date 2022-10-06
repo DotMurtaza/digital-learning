@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:online_academy/Utils/utils.dart';
+import 'package:online_academy/views/pages/PaymentPage/payment_screen.dart';
 import 'package:online_academy/views/pages/home/home_page.dart';
 
 class AuthController extends GetxController {
@@ -24,7 +25,7 @@ class AuthController extends GetxController {
           "teacherId": value.user!.uid
         }).then((value) {
           Get.back();
-          Get.offAll(HomePage());
+          Get.offAll(PaymentScreen());
         });
       });
     } catch (e) {
@@ -40,7 +41,7 @@ class AuthController extends GetxController {
           .signInWithEmailAndPassword(email: email, password: password)
           .then((value) {
         Get.back();
-        Get.offAll(() => HomePage());
+        Get.offAll(() => PaymentScreen());
       });
     } catch (e) {
       Get.back();

@@ -12,7 +12,7 @@ class DiaryHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: size.height * 0.06,
-      width: size.width,
+      width: size.width * 0.948,
       decoration: const BoxDecoration(
           color: Colors.black,
           borderRadius: BorderRadius.only(

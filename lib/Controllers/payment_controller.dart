@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+import 'package:online_academy/views/pages/generate_code/generate_code_page.dart';
 
 class PaymentController extends GetxController {
   Map<String, dynamic>? paymentIntentData;
@@ -19,6 +20,7 @@ class PaymentController extends GetxController {
                       paymentIntentData!['client_secret'],
                   applePay: true,
                   googlePay: true,
+
                   //testEnv: true,
                   //style: ThemeMode.dark,
                   merchantCountryCode: 'US',
@@ -49,6 +51,7 @@ class PaymentController extends GetxController {
         //orderPlaceApi(paymentIntentData!['id'].toString());
         ScaffoldMessenger.of(context)
             .showSnackBar(const SnackBar(content: Text("paid successfully")));
+        Get.to(() => GenerateCode());
 
         paymentIntentData = null;
       }).onError((error, stackTrace) {
